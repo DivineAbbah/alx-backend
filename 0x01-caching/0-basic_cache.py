@@ -10,13 +10,13 @@ class BasicCache(BaseCaching):
     '''
 
     def put(self, key, item):
-        '''attach cache to the dictionary
+        '''attach cahes to dictionary
         '''
         if key is not None and item is not None:
             self.cache_data[key] = item
 
     def get(self, key):
-        '''return cache data for the input key
+        '''return the cache data for the input key
         '''
 
         return self.cache_data.get(key, None)
